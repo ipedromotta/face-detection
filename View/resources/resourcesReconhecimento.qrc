@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>img/aprovado.svg</file>
+    <file>img/cadastrar.svg</file>
+    <file>img/reconhecer.svg</file>
+  </qresource>
+</RCC>
