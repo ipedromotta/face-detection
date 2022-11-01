@@ -22,5 +22,7 @@ class UsuarioModel:
             cursor.execute(f"INSERT INTO USUARIOS (NOME) VALUES ('{nome}')")
             conn.commit()
             cursor.close()
+            return True
         except Exception as ex:
             print(ex)
+            return False
