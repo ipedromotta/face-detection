@@ -2,18 +2,15 @@ import sys
 
 from PyQt5 import QtWidgets
 
-from View.TelaPrincipal import Ui_TelaPrincipal
+from View.InterfacePrincipal import InterfacePrincipal
 
 
 if __name__ == "__main__":
     try:
         app = QtWidgets.QApplication(sys.argv)
         
-        window = QtWidgets.QMainWindow()
-        tela = Ui_TelaPrincipal()
-        tela.setupUi(window)
-        window.show()
-        
+        interface = InterfacePrincipal()
+        interface.show()
         
         sys.exit(app.exec_())
     except Exception as ex:
