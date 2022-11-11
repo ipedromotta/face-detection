@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>308</width>
+    <width>312</width>
     <height>303</height>
    </rect>
   </property>
@@ -97,49 +97,8 @@ border-color: #5C7AEA;
      <property name="alignment">
       <set>Qt::AlignCenter</set>
      </property>
-    </widget>
-   </item>
-   <item>
-    <widget class="QPushButton" name="btnRosto">
-     <property name="enabled">
+     <property name="wordWrap">
       <bool>true</bool>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>290</width>
-       <height>40</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>290</width>
-       <height>40</height>
-      </size>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>14</pointsize>
-      </font>
-     </property>
-     <property name="cursor">
-      <cursorShape>PointingHandCursor</cursorShape>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">*{border-radius: 5px;
-border-width: 1px;
-border-style: solid;
-border-color: #DADADA;
-background-color: #3D56B2;
-color: white;
-padding:5px;
-}
-::hover{
-background-color: #5C7AEA;
-}
-</string>
-     </property>
-     <property name="text">
-      <string>Cadastrar rosto</string>
      </property>
     </widget>
    </item>
@@ -151,7 +110,7 @@ background-color: #5C7AEA;
      <property name="minimumSize">
       <size>
        <width>100</width>
-       <height>40</height>
+       <height>50</height>
       </size>
      </property>
      <property name="font">
@@ -174,10 +133,14 @@ padding:5px;
 ::hover{
 background-color: #5C7AEA;
 }
+QPushButton:disabled {
+background-color: #A0A0A0;
+color: #797979;
+}
 </string>
      </property>
      <property name="text">
-      <string>Confirmar</string>
+      <string>Cadastrar</string>
      </property>
     </widget>
    </item>
