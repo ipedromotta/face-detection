@@ -26,3 +26,31 @@ class UsuarioModel:
         except Exception as ex:
             print(ex)
             return False
+        
+    @staticmethod
+    def usuario_existe(conn , nome):
+        try:
+            cursor = conn.cursor()
+            cursor.execute(f"SELECT * FROM USUARIOS WHERE NOME = '{nome}'")
+            row = cursor.fetchone()
+            cursor.close()
+            if row:
+                return True
+            else:
+                return False
+        except Exception as ex:
+            print(ex)
+            return None
+        
+    @staticmethod
+    def deletar_todos_usuarios(conn):
+        try:
+            cursor = conn.cursor()
+            cursor.execute("DELETE FROM USUARIOS")
+            conn.commit()
+            cursor.close()
+            
+            return True
+        except Exception as ex:
+            print(ex)
+            return False
